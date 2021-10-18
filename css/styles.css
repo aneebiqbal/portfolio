@@ -1,0 +1,162 @@
+/*import fonts*/
+@import url(fonts.css);
+
+/*import varialbles*/
+@import url(./partials/variable.css);
+
+/*import _global styling*/
+@import url(partials/_global.css);
+
+/*start navigation*/
+body {
+    font-family: roboto-regular;
+}
+.navbar-brand img{
+    padding: 0 2rem 0 5rem;
+}
+.navbar{
+    padding: 1rem 20rem;
+}
+.nav-link{
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 2rem;
+    color:var(--title-color);
+    font-size: large;
+}
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+.nav-link:hover {
+    color: var(--primary-color2) !important;
+    
+}
+
+/*end navigation*/
+
+/*strat banner area*/
+.site-banner{
+    background: url(/img/banner/home-banner.png)no-repeat 0% 50%;
+}
+.site-banner h3{
+    padding-top: 35%;
+    font-weight: 500;
+
+}
+.site-banner h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+.site-banner h1{
+    font-size: 5rem;
+}
+.site-banner h4{
+    font-size: 1.5rem;
+
+}
+.banner-image>img{
+   padding: 7rem 0;
+   width: 90rem;
+
+}
+
+/*end banner area*/
+
+/*start about area*/
+.about-area{
+    padding: 8rem 5rem;
+}
+.about-title h2>span{
+    display:block;
+    font: normal bold 60px/80px var(--roboto);
+    letter-spacing: 21px;
+}
+.about-title.paragraph p{
+    padding: 4rem 0rem;
+}
+
+
+/*end about area*/
+
+/*start band area*/
+.band-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+    
+}
+.first-row.col-lg-4{
+display: flex;
+justify-content: center;
+
+}
+.single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform.4s ease;
+
+}
+.single-brand>img{
+    width: 50%;
+}
+.single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+.single-brand:hover>img{
+    filter:brightness(0.15)
+}
+.experiance-area{
+    padding-left: 1rem;
+}
+
+.experiance-area span{
+    display: block;
+}
+
+.years-area{
+    background: url(/img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 20rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+
+}
+.bg-panel{
+    position: absolute;
+    left: -190px;
+    top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 1200px;
+    z-index: -1;
+}
+.years{
+    font: normal bold 84px/40px ;
+    color: var(--primary-color2);
+    z-index: 2;
+}
+.years-area h2> span{
+    font: normal 600 22px/30px var(--roboto) ;
+
+}
+.call-area{
+    padding-left: 8rem;
+}
+.call-area>p{
+    padding-left: -30rem;
+}
+
+/*end band area*/
